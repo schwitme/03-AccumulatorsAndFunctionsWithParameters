@@ -128,6 +128,7 @@ def draw_circles2():
     for k in range(18):
         center_point = rg.Point((((k+2)*20)+10), 100)
         circle = rg.Circle(center_point, 10)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
     window.render()
     window.close_on_mouse_click()

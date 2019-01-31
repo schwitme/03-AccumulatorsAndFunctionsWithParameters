@@ -177,8 +177,8 @@ def draw_circles3():
 
     window = rg.RoseWindow(300, 300)
     center_point = rg.Point(200, 150)
-    for k in range(21):
-        circle = rg.Circle(center_point, k)
+    for k in range(100):
+        circle = rg.Circle(center_point, k+1)
         circle.attach_to(window)
     window.render()
     window.close_on_mouse_click()
